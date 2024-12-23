@@ -1,0 +1,40 @@
+ <div class="site-section">
+      <div class="container">
+
+        <div class="row mb-5">
+          <div class="col-md-9 order-1">
+
+            <div class="row align">
+              <div class="col-md-12 mb-5">
+                <div class="float-md-left"><h2 class="text-black h5">Tất cả cửa hàng</h2></div>
+              </div>
+            </div>
+            <div class="row mb-5">
+              
+			  {{#each products}}
+              <div class="col-lg-6 col-md-6 item-entry mb-4">
+                <a href="#" class="product-item md-height bg-gray d-block">
+                  <img src="images/{{this.image}}" alt="Image" class="img-fluid">
+                </a>
+                <h2 class="item-title"><a href="#" style="text-decoration: none;">{{this.name}}</a></h2>
+                <strong class="item-price">{{this.price}}<sup>đ</sup></strong>
+              </div>
+			  {{/each}}
+            </div>
+            
+          </div>
+
+          <div class="col-md-3 order-2 mb-5 mb-md-0">
+            <div class="border p-4 rounded mb-4">
+              <h3 class="mb-3 h6 text-uppercase text-black d-block">Danh Mục</h3>
+              <ul class="list-unstyled mb-0">
+				{{#each categories}}
+                <li class="mb-1"><a href="#" class="d-flex" style="text-decoration: none; color: black;"><span>{{this.name}}</span></a></li>
+                {{/each}}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>

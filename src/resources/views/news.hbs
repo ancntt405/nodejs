@@ -1,0 +1,58 @@
+    <!-- Banner Slider -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            {{#each banner}}
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="images/{{this.image}}" class="d-block w-100" alt="..." width="500" height="400">
+            </div>
+           {{/each}}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Sản Phẩm Section -->
+    <section class="py-6 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Sản Phẩm Và Dịch Vụ</h2>
+            <div class="row">
+                {{#each blog}}
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/{{this.image}}" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-align:center">{{this.title}}</h5>
+                            <span class="mb-4 text-center" style="color: red; font-weight: bolder; font-size: 20px;">{{this.price}}<sup>đ</sup></span>
+                            <p class="text-center">{{this.pagraph}}</p>
+                            <span class="text-center">{{this.day}}</span>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <nav class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><<</a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">1<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">>></a>
+            </li>
+        </ul>
+    </nav>

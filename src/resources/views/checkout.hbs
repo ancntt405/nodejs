@@ -1,0 +1,93 @@
+ <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <h2 class="h3 mb-3 text-black">Chi tiết thanh toán</h2>
+            <div class="p-3 p-lg-5 border">
+              <div class="form-group">
+                <label for="c_country" class="text-black">Tỉnh/TP<span class="text-danger">*</span></label>
+                <select id="c_country" class="form-control">
+                  <option value="1">Hồ Chí Minh</option>    
+                  <option value="2">Đà Nẵng</option>    
+                  <option value="3">Bà Rịa - Vũng Tàu</option>    
+                  <option value="4">Bắc Kạn</option>    
+                  <option value="5">Bắc Ninh</option>    
+                  <option value="6">Bình Định</option>    
+                  <option value="7">Hà Nội</option>    
+                  <option value="8">An Giang</option>    
+                  <option value="9">Bắc Giang</option>    
+                </select>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="name" class="text-black">Tên Của Bạn<span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="name" name="name">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="address" class="text-black">Địa chỉ <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="address" name="address" placeholder="Địa chỉ của bạn">
+                </div>
+              </div>
+
+           
+              <div class="form-group row mb-5">
+                <div class="col-md-6">
+                  <label for="email" class="text-black">Email của bạn <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="email" name="email">
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="text-black">Số điện thoại của bạn <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="phone" name="phone">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="note" class="text-black">Ghi chú</label>
+                <textarea name="note" id="note" cols="30" rows="5" class="form-control" placeholder="Viết ghi chú của bạn ở đây..."></textarea>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h2 class="h3 mb-3 text-black">Đơn Hàng của bạn</h2>
+                <div class="p-3 p-lg-5 border">
+                  <table class="table site-block-order-table mb-5">
+                    <thead>
+                      <th>Sản phẩm</th>
+                      <th>Tổng tiền</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong class="mx-2">x</strong> </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><strong class="mx-2">x</strong></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="text-black font-weight-bold"><strong>Tổng tiền</strong></td>
+                        <td class="text-black"><sup>đ</sup></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                  <div class="form-group">
+                    <button class="btn btn-primary btn-lg btn-block" onclick="window.location='/thankyou'">Đặt Đơn</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- </form> -->
+      </div>
+    </div>

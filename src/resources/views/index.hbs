@@ -1,0 +1,79 @@
+ <div class="site-blocks-cover" data-aos="fade">
+      <div class="container">
+        <div class="row">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    {{#each banner}}
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="images/{{this.image}}" class="d-block w-100" alt="...">
+    </div>
+    {{/each}}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="title-section mb-5 col-12">
+            <h2 class="text-uppercase">Sản phẩm phổ biến</h2>
+          </div>
+        </div>
+        <div class="row">
+          {{#each products}}
+          <div class="col-lg-4 col-md-6 item-entry mb-4">
+            <a href="#" class="product-item md-height bg-gray d-block">
+              <img src="images/{{this.image}}" alt="Image" class="img-fluid">
+            </a>
+            <h2 class="item-title"><a href="#" style="text-decoration: none;">{{this.name}}</a></h2>
+            <strong class="item-price">{{this.price}}<sup>đ</sup></strong>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="title-section text-center mb-5 col-12">
+            <h2 class="text-uppercase">Được đánh giá cao nhất</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 block-3">
+            <div class="nonloop-block-3 owl-carousel">
+              {{#each product}}
+              <div class="item">
+                <div class="item-entry">
+                  <a href="#" class="product-item md-height bg-gray d-block">
+                    <img src="images/{{this.image}}" alt="Image" class="img-fluid">
+                  </a>
+                  <h2 class="item-title"><a href="#" style="text-decoration: none;">{{this.name}}</a></h2>
+                  <strong class="item-price">{{this.price}}<sup>đ</sup></strong>
+                  <div class="star-rating">
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                  </div>
+                </div>
+              </div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
